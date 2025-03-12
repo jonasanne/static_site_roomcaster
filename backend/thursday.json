@@ -1,0 +1,165 @@
+{
+  "Calibrate Room": [
+    {
+      "time": "08:00 - 09:10",
+      "session": "Registration"
+    },
+    {
+      "time": "09:10 - 10:00",
+      "session": "Keynote - PHP's Type System Dissected",
+      "speaker": "Gina Banyard",
+      "topics": [
+        "PHP",
+        "Code & Development"
+      ]
+    },
+    {
+      "time": "10:10 - 11:00",
+      "session": "Why dates can be complicated. And practical solutions.",
+      "speaker": "ekes",
+      "topics": [
+        "Code & Development",
+        "Sitebuilding"
+      ]
+    },
+    {
+      "time": "11:10 - 12:00",
+      "session": "BDD and Behat. What, why, and how?",
+      "speaker": "valthebald",
+      "topics": [
+        "Devops",
+        "Code & Development",
+        "Quality Assurance & Testing"
+      ]
+    },
+    {
+      "time": "12:00 - 13:00",
+      "session": "Lunch"
+    },
+    {
+      "time": "13:00 - 13:50",
+      "session": "Recipes: It's About Time!",
+      "speaker": "mandclu",
+      "topics": [
+        "Sitebuilding",
+        "Code & Development",
+        "Drupal CMS"
+      ]
+    },
+    {
+      "time": "14:00 - 14:50",
+      "session": "ECA, AI and MCP: Connecting Context, Intelligence and Action",
+      "speaker": "lammensj",
+      "topics": [
+        "Code & Development"
+      ]
+    },
+    {
+      "time": "15:00 - 15:30",
+      "session": "Coffee break"
+    },
+    {
+      "time": "15:30 - 16:20",
+      "session": "Building Agents with code or no-code or low-code",
+      "speaker": "Marcus Johansson",
+      "topics": [
+        "Sitebuilding",
+        "Drupal CMS"
+      ]
+    },
+    {
+      "time": "16:35 - 17:25",
+      "session": "DOM, HTML 5, and PHP",
+      "speaker": "nielsdos",
+      "topics": [
+        "Code & Development",
+        "PHP"
+      ]
+    },
+    {
+      "time": "17:30 - 18:00",
+      "session": "Networking"
+    }
+  ],
+  "Dropsolid Room": [
+    {
+      "time": "08:00 - 09:10",
+      "session": "Registration"
+    },
+    {
+      "time": "09:10 - 10:00",
+      "session": "Keynote - PHP's Type System Dissected"
+    },
+    {
+      "time": "10:10 - 11:00",
+      "session": "beyond the buzzword: building a practical DevSecOps culture in your organization",
+      "speaker": "mollux",
+      "topics": [
+        "Devops",
+        "Code & Development",
+        "Quality Assurance & Testing"
+      ]
+    },
+    {
+      "time": "11:10 - 12:00",
+      "session": "Drupal CMS: Golden standard for privacy and data protection",
+      "speaker": "jurgenhaas",
+      "topics": [
+        "Business & Strategy",
+        "Drupal CMS",
+        "Sitebuilding"
+      ]
+    },
+    {
+      "time": "12:00 - 13:00",
+      "session": "Lunch"
+    },
+    {
+      "time": "13:00 - 13:50",
+      "session": "Experience Builder: Behind The Scenes",
+      "speaker": "Wim Leers, balintbrews",
+      "topics": [
+        "User experience",
+        "Accessibility, Frontend & UX Design",
+        "Code & Development",
+        "Javascript and Single Page Applications"
+      ]
+    },
+    {
+      "time": "14:00 - 14:50",
+      "session": "Our good ol’ display building is cool again",
+      "speaker": "pdureau",
+      "topics": [
+        "Sitebuilding",
+        "Accessibility, Frontend & UX Design",
+        "Drupal CMS"
+      ]
+    },
+    {
+      "time": "15:00 - 15:30",
+      "session": "Coffee break"
+    },
+    {
+      "time": "15:25 - 15:55",
+      "session": "From seed to Twig: soft introduction to the Compiling Theory",
+      "speaker": "the-true-mamoot",
+      "topics": [
+        "Code & Development",
+        "PHP"
+      ]
+    },
+    {
+      "time": "16:00 - 16:30",
+      "session": "Shadow patching: using AI to discover undisclosed security fixes in open-source",
+      "speaker": "Dr. Frederick Ryckbosch",
+      "topics": [
+        "Devops",
+        "Quality Assurance & Testing"
+      ]
+    },
+    {
+      "time": "16:35 - 17:25",
+      "session": "Networking"
+    }
+  ]
+}

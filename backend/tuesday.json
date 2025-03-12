@@ -1,0 +1,199 @@
+{
+  "Calibrate Room": [
+    {
+      "start_time": "08:00",
+      "end_time": "09:30",
+      "title": "Registration",
+      "speaker": null,
+      "track": null,
+      "tags": []
+    },
+    {
+      "start_time": "09:30",
+      "end_time": "09:45",
+      "title": "Opening Session",
+      "speaker": null,
+      "track": null,
+      "tags": []
+    },
+    {
+      "start_time": "09:45",
+      "end_time": "10:35",
+      "title": "Keynote - Innovating for Impact: A Developer’s Role in Shaping the Future",
+      "speaker": "Thijs Suijten",
+      "track": "Code & Development",
+      "tags": [
+        "Code & Development"
+      ]
+    },
+    {
+      "start_time": "10:35",
+      "end_time": "11:00",
+      "title": "Coffee break",
+      "speaker": null,
+      "track": null,
+      "tags": []
+    },
+    {
+      "start_time": "11:00",
+      "end_time": "12:00",
+      "title": "Drupal CMS Q&A with Dries",
+      "speaker": "Dries Buytaert",
+      "track": "Code & Development",
+      "tags": [
+        "Drupal CMS"
+      ]
+    },
+    {
+      "start_time": "12:00",
+      "end_time": "13:00",
+      "title": "Lunch",
+      "speaker": null,
+      "track": null,
+      "tags": []
+    },
+    {
+      "start_time": "13:00",
+      "end_time": "13:50",
+      "title": "Drupal Developer Survey - Results and Insights from the Community",
+      "speaker": "HeroicNick",
+      "track": "Code & Development",
+      "tags": [
+        "Drupal Community + Being Human"
+      ]
+    },
+    {
+      "start_time": "14:00",
+      "end_time": "14:50",
+      "title": "Varnish for Drupal developers",
+      "speaker": "Thijs Feryn",
+      "track": "Devops",
+      "tags": [
+        "DevOps"
+      ]
+    },
+    {
+      "start_time": "15:00",
+      "end_time": "15:30",
+      "title": "Coffee break",
+      "speaker": null,
+      "track": null,
+      "tags": []
+    },
+    {
+      "start_time": "15:30",
+      "end_time": "16:20",
+      "title": "AI and Drupal in Action: Real-World Implementation and Future Market Impact",
+      "speaker": "breidert",
+      "track": "Business & strategy",
+      "tags": [
+        "Business & Strategy",
+        "Drupal CMS"
+      ]
+    },
+    {
+      "start_time": "16:30",
+      "end_time": "17:20",
+      "title": "Keynote - WebAssembly beyond the browser",
+      "speaker": "Dr. Merlijn Sebrechts",
+      "track": "Code & Development",
+      "tags": [
+        "Code & Development"
+      ]
+    },
+    {
+      "start_time": "17:20",
+      "end_time": "18:00",
+      "title": "Networking",
+      "speaker": null,
+      "track": null,
+      "tags": []
+    }
+  ],
+  "Dropsolid Room": [
+    {
+      "start_time": "08:00",
+      "end_time": "13:00",
+      "title": null,
+      "speaker": null,
+      "track": null,
+      "tags": []
+    },
+    {
+      "start_time": "13:00",
+      "end_time": "13:50",
+      "title": "Help! My search page is getting hammered by a bot!",
+      "speaker": "ifrik",
+      "track": "Sitebuilding",
+      "tags": [
+        "Code & Development",
+        "Sitebuilding"
+      ]
+    },
+    {
+      "start_time": "14:00",
+      "end_time": "14:50",
+      "title": "Nuxt for Drupal Developers: Modern Frontend Without the JavaScript Jungle",
+      "speaker": "fago",
+      "track": "Frontend & Design",
+      "tags": [
+        "Javascript and Single Page Applications"
+      ]
+    },
+    {
+      "start_time": "15:00",
+      "end_time": "15:30",
+      "title": "Coffee break",
+      "speaker": null,
+      "track": null,
+      "tags": []
+    },
+    {
+      "start_time": "15:30",
+      "end_time": "16:20",
+      "title": "Taste the Power of Drupal Plugins!",
+      "speaker": "pwolanin",
+      "track": "Code & Development",
+      "tags": [
+        "Code & Development",
+        "PHP"
+      ]
+    },
+    {
+      "start_time": "16:30",
+      "end_time": "18:00",
+      "title": "Student track",
+      "speaker": null,
+      "track": null,
+      "tags": []
+    }
+  ],
+  "Student Track": [
+    {
+      "start_time": "08:00",
+      "end_time": "12:45",
+      "title": null,
+      "speaker": null,
+      "track": null,
+      "tags": []
+    },
+    {
+      "start_time": "12:45",
+      "end_time": "13:00",
+      "title": "Welcome moment for Dev Days first timers",
+      "speaker": "klara binon, Joke",
+      "track": "Student track",
+      "tags": [
+        "Higher Education"
+      ]
+    },
+    {
+      "start_time": "13:00",
+      "end_time": "18:00",
+      "title": "Dedicated sessions for students.",
+      "speaker": null,
+      "track": null,
+      "tags": []
+    }
+  ]
+}

@@ -1,0 +1,23 @@
+{
+  "name": "static_site_roomcaster",
+  "version": "1.0.0",
+  "main": "script.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jonasanne/static_site_roomcaster.git"
+  },
+  "author": "jonasanne",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/jonasanne/static_site_roomcaster/issues"
+  },
+  "homepage": "https://github.com/jonasanne/static_site_roomcaster#readme",
+  "devDependencies": {
+    "gulp": "^5.0.0",
+    "gulp-sass": "^6.0.1",
+    "sass": "^1.85.1"
+  }
+}

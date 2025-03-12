@@ -1,0 +1,262 @@
+{
+  "Calibrate Room": [
+    {
+      "start_time": "08:00",
+      "end_time": "09:10",
+      "title": "Registration",
+      "speaker": "",
+      "track": "",
+      "tags": []
+    },
+    {
+      "start_time": "09:10",
+      "end_time": "10:00",
+      "title": "Keynote - AI is the new UI - how we are building AI into Drupal CMS",
+      "speaker": "James Abrahams",
+      "track": "Code & Development",
+      "tags": [
+        "Code & Development",
+        "Drupal CMS",
+        "Sitebuilding"
+      ]
+    },
+    {
+      "start_time": "10:10",
+      "end_time": "11:00",
+      "title": "AI-Powered Semantic Search in Drupal with Typesense",
+      "speaker": "robertoperuzzo",
+      "track": "Sitebuilding",
+      "tags": [
+        "Sitebuilding"
+      ]
+    },
+    {
+      "start_time": "11:10",
+      "end_time": "12:00",
+      "title": "Overcoming our Primitive Obsessions",
+      "speaker": "beram",
+      "track": "Code & Development",
+      "tags": [
+        "Code & Development",
+        "PHP"
+      ]
+    },
+    {
+      "start_time": "12:00",
+      "end_time": "13:00",
+      "title": "Lunch",
+      "speaker": "",
+      "track": "",
+      "tags": []
+    },
+    {
+      "start_time": "13:00",
+      "end_time": "13:50",
+      "title": "The future of Drupal core in the age of Drupal CMS",
+      "speaker": "Gábor Hojtsy",
+      "track": "Code & Development",
+      "tags": [
+        "Code & Development",
+        "Core Conversations",
+        "Drupal CMS"
+      ]
+    },
+    {
+      "start_time": "14:00",
+      "end_time": "14:50",
+      "title": "Code Quality and Testing: From Nuclear Power Plant Software to Business Card Websites",
+      "speaker": "jepster",
+      "track": "Code & Development",
+      "tags": [
+        "Code & Development",
+        "PHP",
+        "Quality Assurance & Testing"
+      ]
+    },
+    {
+      "start_time": "15:00",
+      "end_time": "15:25",
+      "title": "Coffee break",
+      "speaker": "",
+      "track": "",
+      "tags": []
+    },
+    {
+      "start_time": "15:25",
+      "end_time": "15:55",
+      "title": "Be Lazy, Update Drupal Easily in CI/CD",
+      "speaker": "Papa Jo",
+      "track": "DevOps",
+      "tags": [
+        "DevOps",
+        "Quality Assurance & Testing"
+      ]
+    },
+    {
+      "start_time": "16:00",
+      "end_time": "16:30",
+      "title": "SDC & Form API, better late than never",
+      "speaker": "Grimreaper",
+      "track": "Frontend & Design",
+      "tags": [
+        "Accessibility, Frontend & UX Design",
+        "Code & Development"
+      ]
+    },
+    {
+      "start_time": "16:35",
+      "end_time": "17:25",
+      "title": "Keynote - Drupal CMS now and beyond",
+      "speaker": "ckrina",
+      "track": "Frontend & Design",
+      "tags": [
+        "Drupal CMS"
+      ]
+    }
+  ],
+  "Dropsolid Room": [
+    {
+      "start_time": "08:00",
+      "end_time": "09:10",
+      "title": "Registration",
+      "speaker": "",
+      "track": "",
+      "tags": []
+    },
+    {
+      "start_time": "10:10",
+      "end_time": "11:00",
+      "title": "The Developer's Guide to UX",
+      "speaker": "clementg",
+      "track": "User experience",
+      "tags": [
+        "Accessibility, Frontend & UX Design"
+      ]
+    },
+    {
+      "start_time": "11:10",
+      "end_time": "12:00",
+      "title": "Common caching mistakes you all make that are making your site slow or insecure",
+      "speaker": "kristiaanvandeneynde",
+      "track": "Code & Development",
+      "tags": [
+        "Code & Development",
+        "PHP"
+      ]
+    },
+    {
+      "start_time": "12:00",
+      "end_time": "13:00",
+      "title": "Lunch",
+      "speaker": "",
+      "track": "",
+      "tags": []
+    },
+    {
+      "start_time": "13:00",
+      "end_time": "13:50",
+      "title": "Responsive Images using RIFT Module",
+      "speaker": "D34dMan",
+      "track": "Sitebuilding",
+      "tags": [
+        "Sitebuilding"
+      ]
+    },
+    {
+      "start_time": "14:00",
+      "end_time": "14:50",
+      "title": "Advanced accessibility problems",
+      "speaker": "textformer",
+      "track": "Frontend & Design",
+      "tags": [
+        "Accessibility, Frontend & UX Design"
+      ]
+    },
+    {
+      "start_time": "15:00",
+      "end_time": "15:25",
+      "title": "Coffe break",
+      "speaker": "",
+      "track": "",
+      "tags": []
+    },
+    {
+      "start_time": "15:25",
+      "end_time": "15:55",
+      "title": "But my code ain't pink: Navigating the IT Landscape as a Woman",
+      "speaker": "Esmeralda",
+      "track": "Diversity",
+      "tags": [
+        "Drupal Community + Being Human"
+      ]
+    },
+    {
+      "start_time": "16:00",
+      "end_time": "16:30",
+      "title": "Drupal + Search Api + Facets + React",
+      "speaker": "dtrdewaele",
+      "track": "Code & Development",
+      "tags": [
+        "Accessibility, Frontend & UX Design",
+        "Code & Development"
+      ]
+    }
+  ],
+  "Intro track": [
+    {
+      "start_time": "08:00",
+      "end_time": "09:10",
+      "title": "Registration",
+      "speaker": "",
+      "track": "",
+      "tags": []
+    },
+    {
+      "start_time": "10:10",
+      "end_time": "11:00",
+      "title": "First-time contributor workshop",
+      "speaker": "rodrigoaguilera",
+      "track": "Student track",
+      "tags": [
+        "Drupal Community + Being Human"
+      ]
+    },
+    {
+      "start_time": "11:10",
+      "end_time": "12:00",
+      "title": "From Zero to Drupal: My First Year as a Developer",
+      "speaker": "daniel_mm7",
+      "track": "Student track",
+      "tags": [
+        "Drupal Community + Being Human",
+        "Higher Education"
+      ]
+    },
+    {
+      "start_time": "12:00",
+      "end_time": "13:00",
+      "title": "Lunch",
+      "speaker": "",
+      "track": "",
+      "tags": []
+    },
+    {
+      "start_time": "13:00",
+      "end_time": "13:50",
+      "title": "Your first Drupal AI session (AI for editors, MyOwnGPT)",
+      "speaker": "wouters_f",
+      "track": "Sitebuilding",
+      "tags": []
+    },
+    {
+      "start_time": "14:00",
+      "end_time": "14:50",
+      "title": "Introduction to migration",
+      "speaker": "dataweb",
+      "track": "Code & Development",
+      "tags": [
+        "Code & Development"
+      ]
+    }
+  ]
+}
