@@ -9,21 +9,100 @@
 </head>
 
 <body>
-  <header>
-    <div class="logo"><img src="src/assets/img/Header.svg" alt="Drupal Dev Days 2025 logo"></div>
-  </header>
-  <div class="container">
-    <p class="day">Loading...</p>
-    <h1 class="room-title">Loading...</h1>
-    <div class="current-session" class="view">
-      <span class="current-session__speaker speaker"></span>
-      <h2 class="current-session__title title"></h2>
-      <span class="current-session__time">
-      </span>
+  <main class="main">
+    <div class="main-left">
+      <div class="header">
+        <div class="logo"><img src="src/assets/img/Header.svg" alt="Drupal Dev Days 2025 logo"></div>
+        <div class="header__room-title">
+          <h1 class="title js-room">Loading...</h1>
+        </div>
+        <div class="header__time"><span class="js-time">11:32</span></div>
+      </div>
+      <div class="main__cards">
+        <div class="main__cards-current js-current-card card hidden ">
+          <div class="main__cards-current-label">
+            <h2 class="session-label">CURRENT SESSION:</h2>
+          </div>
+          <div class="main__cards-current-title ">
+            <h3 class="js-current-title">Loading...</h3>
+          </div>
+          <div class="main__cards-current-sub">
+            <div class="main__cards-current-sub-speaker main__cards-current-sub-item js-curent-speaker">
+              <svg height="48px" viewBox="0 -960 960 960" width="48px" fill="#1f1f1f">
+                <path
+                  d="M480-480q-66 0-113-47t-47-113q0-66 47-113t113-47q66 0 113 47t47 113q0 66-47 113t-113 47ZM160-160v-112q0-34 17.5-62.5T224-378q62-31 126-46.5T480-440q66 0 130 15.5T736-378q29 15 46.5 43.5T800-272v112H160Zm80-80h480v-32q0-11-5.5-20T700-306q-54-27-109-40.5T480-360q-56 0-111 13.5T260-306q-9 5-14.5 14t-5.5 20v32Zm240-320q33 0 56.5-23.5T560-640q0-33-23.5-56.5T480-720q-33 0-56.5 23.5T400-640q0 33 23.5 56.5T480-560Zm0-80Zm0 400Z" />
+              </svg>
+              <span class="speaker-js">Loading...</span>
+            </div>
+            <div class="main__cards-current-sub-time main__cards-current-sub-item">
+              <svg height="48px" viewBox="0 -960 960 960" width="48px" fill="#1f1f1f">
+                <path
+                  d="m612-292 56-56-148-148v-184h-80v216l172 172ZM480-80q-83 0-156-31.5T197-197q-54-54-85.5-127T80-480q0-83 31.5-156T197-763q54-54 127-85.5T480-880q83 0 156 31.5T763-763q54 54 85.5 127T880-480q0 83-31.5 156T763-197q-54 54-127 85.5T480-80Zm0-400Zm0 320q133 0 226.5-93.5T800-480q0-133-93.5-226.5T480-800q-133 0-226.5 93.5T160-480q0 133 93.5 226.5T480-160Z" />
+              </svg>
+              <div class="js-current-time">Loading...</div>
+            </div>
+          </div>
+        </div>
+        <div class="main__cards-next card js-next-card">
+          <div class="main__cards-next-label">
+            <h2 class="session-label">NEXT SESSION:</h2>
+          </div>
+          <div class="main__cards-next-title">
+            <h3 class="js-next-title">Loading...</h3>
+          </div>
+          <div class="main__cards-next-sub">
+            <div class="main__cards-next-sub-speaker main__cards-next-sub-item js-next-speaker">
+              <svg height="48px" viewBox="0 -960 960 960" width="48px" fill="#1f1f1f">
+                <path
+                  d="M480-480q-66 0-113-47t-47-113q0-66 47-113t113-47q66 0 113 47t47 113q0 66-47 113t-113 47ZM160-160v-112q0-34 17.5-62.5T224-378q62-31 126-46.5T480-440q66 0 130 15.5T736-378q29 15 46.5 43.5T800-272v112H160Zm80-80h480v-32q0-11-5.5-20T700-306q-54-27-109-40.5T480-360q-56 0-111 13.5T260-306q-9 5-14.5 14t-5.5 20v32Zm240-320q33 0 56.5-23.5T560-640q0-33-23.5-56.5T480-720q-33 0-56.5 23.5T400-640q0 33 23.5 56.5T480-560Zm0-80Zm0 400Z" />
+              </svg>
+              <span class="speaker-js">Loading...</span>
+            </div>
+            <div class="main__cards-next-sub-time main__cards-next-sub-item">
+              <svg height="48px" viewBox="0 -960 960 960" width="48px" fill="#1f1f1f">
+                <path
+                  d="m612-292 56-56-148-148v-184h-80v216l172 172ZM480-80q-83 0-156-31.5T197-197q-54-54-85.5-127T80-480q0-83 31.5-156T197-763q54-54 127-85.5T480-880q83 0 156 31.5T763-763q54 54 85.5 127T880-480q0 83-31.5 156T763-197q-54 54-127 85.5T480-80Zm0-400Zm0 320q133 0 226.5-93.5T800-480q0-133-93.5-226.5T480-800q-133 0-226.5 93.5T160-480q0 133 93.5 226.5T480-160Z" />
+              </svg>
+              <div class="js-next-time">Loading...</div>
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
-    <div class="full-schedule" class="view" style="display: none;"></div>
-  </div>
-  <script src="./src/js/script.js"></script>
+    <div class="main-right">
+      <div class="main-right__schedule-item js-session-template hidden">
+        <div class="main-right__schedule-item--title">
+          <h4 class="js-session-title">Loading...</h4>
+        </div>
+        <div class="main-right__schedule-item--bottom">
+          <div class="main-right__schedule-item--bottom-speaker">
+            <svg height="36px" viewBox="0 -960 960 960" width="36px" fill="#1f1f1f">
+              <path
+                d="M480-480q-66 0-113-47t-47-113q0-66 47-113t113-47q66 0 113 47t47 113q0 66-47 113t-113 47ZM160-160v-112q0-34 17.5-62.5T224-378q62-31 126-46.5T480-440q66 0 130 15.5T736-378q29 15 46.5 43.5T800-272v112H160Zm80-80h480v-32q0-11-5.5-20T700-306q-54-27-109-40.5T480-360q-56 0-111 13.5T260-306q-9 5-14.5 14t-5.5 20v32Zm240-320q33 0 56.5-23.5T560-640q0-33-23.5-56.5T480-720q-33 0-56.5 23.5T400-640q0 33 23.5 56.5T480-560Zm0-80Zm0 400Z" />
+            </svg>
+            <span class="js-session-speaker">Loading..</span>
+          </div>
+          <div class="main-right__schedule-item--bottom-time">
+            <svg height="36px" viewBox="0 -960 960 960" width="36px" fill="#1f1f1f">
+              <path
+                d="m612-292 56-56-148-148v-184h-80v216l172 172ZM480-80q-83 0-156-31.5T197-197q-54-54-85.5-127T80-480q0-83 31.5-156T197-763q54-54 127-85.5T480-880q83 0 156 31.5T763-763q54 54 85.5 127T880-480q0 83-31.5 156T763-197q-54 54-127 85.5T480-80Zm0-400Zm0 320q133 0 226.5-93.5T800-480q0-133-93.5-226.5T480-800q-133 0-226.5 93.5T160-480q0 133 93.5 226.5T480-160Z" />
+            </svg>
+            <div class="js-session-time">Loading..</div>
+          </div>
+        </div>
+      </div>
+      <div class="main-right__schedule js-sessions-container">
+      </div>
+    </div>
+    <div class="error js-error hidden">
+      <div class="error-content">
+        <span class="message heading2">Something went wrong.</br> I will try again in: </br>
+          <span class="js-retry">30 seconds</span>
+        </span>
+      </div>
+    </div>
+  </main>
+  <script src="./build/js/main.min.js"></script>
 </body>
 
 </html>

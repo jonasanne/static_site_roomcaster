@@ -8,6 +8,7 @@ try {
   $data = json_decode(file_get_contents("./" . strtolower($day) . ".json"), true);
 
   if (!isset($data[$room])) {
+
     echo json_encode(["error" => "Kamer niet gevonden"]);
     exit;
   }
