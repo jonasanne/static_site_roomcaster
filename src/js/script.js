@@ -103,7 +103,13 @@ function renderSessions(sessions) {
     clone.classList.remove("hidden");
     clone.querySelector(".js-session-title").innerText = session.title;
     clone.querySelector(".js-session-time").innerText = `${session.start_time} - ${session.end_time}`;
-    clone.querySelector(".js-session-speaker").innerText = session.speaker || "TBA";
+    const speakerElement = clone.querySelector(".js-session-speaker");
+    if (session.speaker) {
+      speakerElement.innerText = session.speaker;
+      speakerElement.parentElement.classList.remove("hidden");
+    } else {
+      speakerElement.parentElement.classList.add("hidden");
+    }
     elements.sessionsContainer.appendChild(clone);
   });
 }
@@ -122,7 +128,12 @@ function loadSessions() {
           elements.currentCard.classList.remove("hidden");
           elements.currentTitle.innerText = session.title || "Loading...";
           elements.currentTime.innerText = `${session.start_time} - ${session.end_time}` || "Loading...";
-          elements.currentSpeaker.innerText = session.speaker || "Loading...";
+            if (!session.speaker) {
+            elements.currentSpeaker.parentElement.classList.add("hidden");
+            } else {
+            elements.currentSpeaker.parentElement.classList.remove("hidden");
+            elements.currentSpeaker.innerText = session.speaker;
+            }
           setNextSession(session, data, index);
         }
       });
