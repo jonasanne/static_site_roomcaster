@@ -106,14 +106,7 @@
       "track": null,
       "tags": []
     },
-    {
-      "start_time": "09:10",
-      "end_time": "10:00",
-      "title": null,
-      "speaker": null,
-      "track": null,
-      "tags": []
-    },
+    
     {
       "start_time": "10:10",
       "end_time": "11:00",
@@ -183,14 +176,7 @@
       "track": "Devops",
       "tags": ["Devops", "Quality Assurance & Testing"]
     },
-    {
-      "start_time": "16:30",
-      "end_time": "17:25",
-      "title": null,
-      "speaker": null,
-      "track": null,
-      "tags": []
-    },
+    
     {
       "start_time": "17:25",
       "end_time": "18:00",
