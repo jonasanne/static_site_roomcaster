@@ -1,5 +1,5 @@
 const DEBUG = false; // Set to `false` for production
-const debugTime = new Date("2025-04-15T06:00:00Z"); // Custom debug time
+const debugTime = new Date("2025-04-15T14:00:00Z"); // Custom debug time
 const urlParams = new URLSearchParams(window.location.search);
 
 const day = urlParams.get('day') || getCurrentDay();
@@ -33,40 +33,30 @@ function updateTime() {
     const now = DEBUG ? debugTime.toLocaleTimeString() : new Date().toLocaleTimeString();
     elements.time.innerText = now;
 }
+// Check if a session is upcoming
+function isUpcomingSession(startTime) {
+    const now = DEBUG ? debugTime : new Date();
+    const [startHours, startMinutes] = startTime.split(":").map(Number);
 
-// Render the list of upcoming sessions
-function renderSessions(sessions) {
-    elements.sessionsContainer.innerHTML = ""; // Clear previous sessions
-    sessions.forEach((session) => {
-        const clone = elements.sessionTemplate.cloneNode(true);
-        clone.classList.remove("hidden");
-        clone.querySelector(".js-session-title").innerText = session.title;
-        clone.querySelector(".js-session-time").innerText = `${session.start_time} - ${session.end_time}`;
-        const speakerElement = clone.querySelector(".js-session-speaker");
-        if (session.speaker) {
-            speakerElement.innerText = session.speaker;
-            speakerElement.parentElement.classList.remove("hidden");
-        } else {
-            speakerElement.parentElement.classList.add("hidden");
-        }
-        elements.sessionsContainer.appendChild(clone);
-    });
+    const startDate = new Date(now.getFullYear(), now.getMonth(), now.getDate(), startHours, startMinutes);
+    return now < startDate;
 }
-
-
 // Load sessions from the backend
 function loadSessions() {
     fetch(`../backend/sessions.php?day=${day}`)
         .then((response) => response.json())
         .then((data) => {
             if (data["Calibrate Room"].length > 0) {
-                populateSessions("calibrate", data["Calibrate Room"]);
+                remainingSessionsCali = data['Calibrate Room'].filter((session) => isUpcomingSession(session.start_time));
+                populateSessions("calibrate", remainingSessionsCali);
             }
             if (data["Dropsolid Room"].length > 0) {
-                populateSessions("dropsolid", data["Dropsolid Room"]);
+                remainingSessionsDS = data['Dropsolid Room'].filter((session) => isUpcomingSession(session.start_time));
+                populateSessions("dropsolid", remainingSessionsDS);
             }
             if (data["Student Track"].length > 0) {
-                populateSessions("student", data["Student Track"]);
+                remainingSessionsST = data['Student Track'].filter((session) => isUpcomingSession(session.start_time));
+                populateSessions("student", remainingSessionsST);
             }
         })
         .catch((err) => {
@@ -89,6 +79,9 @@ function populateSessions(roomName, roomData) {
         sessionElement.classList.remove('hidden'); // Unhide the template
         sessionElement.querySelector('.content_block-item-title p').innerText = session.title || 'No Title';
         sessionElement.querySelector('.content_block-item-time span').innerText = `${session.start_time} - ${session.end_time}`;
+        if (!session.speaker) {
+            sessionElement.querySelector('.content_block-item-speaker').classList.add('hidden');
+        }
         sessionElement.querySelector('.content_block-item-speaker span').innerText = session.speaker || 'No Speaker';
 
         // Append the session element to the content block
@@ -96,4 +89,12 @@ function populateSessions(roomName, roomData) {
     });
 }
 
-loadSessions();
+// Initialize the application
+function init() {
+    loadSessions(); // Initial call to load sessions
+    setInterval(() => {
+        loadSessions();
+    }, 60000); // Update sessions every 60 seconds
+}
+
+init();
