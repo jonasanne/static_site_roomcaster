@@ -31,7 +31,9 @@ export const watchFiles = () => {
   gulp.watch('./assets/fonts/**/*', copyFonts);
 };
 
+export const build = gulp.parallel(buildStyles, minifyJs, copyFonts);
+
 export default gulp.series(
-  gulp.parallel(buildStyles, minifyJs, copyFonts),
+  build, // Run the build task first
   watchFiles
 );

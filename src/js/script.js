@@ -1,4 +1,4 @@
-const DEBUG = true; // Set to `false` for production
+const DEBUG = false; // Set to `false` for production
 const debugTime = new Date("2025-04-09T06:00:00Z"); // Custom debug time
 
 const urlParams = new URLSearchParams(window.location.search);
