@@ -156,7 +156,7 @@ function loadSessions() {
     .catch((err) => {
       elements.error.classList.remove("hidden");
       console.error("Error loading sessions:", err);
-      setTimeout(() => location.reload(), 1000);
+      setTimeout(() => location.reload(), 30000); // Retry after 30 seconds
     });
 }
 
