@@ -1,4 +1,4 @@
-const DEBUG = false; // Set to `false` for production
+const DEBUG = true; // Set to `false` for production
 const debugTime = new Date("2025-04-09T06:00:00Z"); // Custom debug time
 
 const urlParams = new URLSearchParams(window.location.search);
@@ -33,7 +33,7 @@ function setSponsorLogo(room) {
     "dropsolid room": "src/assets/img/dropsolid-logo.png",
   };
 
-if (elements.sponsorLogo && sponsorLogos[room]) {
+  if (elements.sponsorLogo && sponsorLogos[room]) {
     elements.sponsorLogo.src = sponsorLogos[room];
     elements.sponsorLogo.alt = `${room} logo`;
   }
@@ -99,6 +99,7 @@ function setNextSession(session, data, index) {
 function renderSessions(sessions) {
   elements.sessionsContainer.innerHTML = ""; // Clear previous sessions
   sessions.forEach((session) => {
+    if (!session.title) return; // Skip if no title
     const clone = elements.sessionTemplate.cloneNode(true);
     clone.classList.remove("hidden");
     clone.querySelector(".js-session-title").innerText = session.title;
@@ -123,17 +124,18 @@ function loadSessions() {
       let currentSessionFound = false;
 
       data.forEach((session, index) => {
+        if (!session.title) return
         if (isCurrentTimeBetween(session.start_time, session.end_time)) {
           currentSessionFound = true;
           elements.currentCard.classList.remove("hidden");
           elements.currentTitle.innerText = session.title || "Loading...";
           elements.currentTime.innerText = `${session.start_time} - ${session.end_time}` || "Loading...";
-            if (!session.speaker) {
+          if (!session.speaker) {
             elements.currentSpeaker.parentElement.classList.add("hidden");
-            } else {
+          } else {
             elements.currentSpeaker.parentElement.classList.remove("hidden");
             elements.currentSpeaker.innerText = session.speaker;
-            }
+          }
           setNextSession(session, data, index);
         }
       });
