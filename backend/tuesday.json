@@ -29,7 +29,7 @@
     {
       "start_time": "10:35",
       "end_time": "11:00",
-      "title": "Coffee break",
+      "title": "Coffee break & Group picture outside",
       "speaker": null,
       "track": null,
       "tags": []
@@ -121,7 +121,7 @@
     },
     {
       "start_time": "13:00",
-      "end_time": "13:50",
+      "end_time": "’13:50",
       "title": "Help! My search page is getting hammered by a bot!",
       "speaker": "ifrik",
       "track": "Sitebuilding",
@@ -162,7 +162,7 @@
     {
       "start_time": "16:30",
       "end_time": "18:00",
-      "title": "Student track",
+      "title": null,
       "speaker": null,
       "track": null,
       "tags": []
@@ -190,7 +190,7 @@
     {
       "start_time": "13:00",
       "end_time": "18:00",
-      "title": "Dedicated sessions for students.",
+      "title": "Workshop - Drupal for absolute beginners",
       "speaker": null,
       "track": null,
       "tags": []

@@ -2,14 +2,14 @@
   "Calibrate Room": [
     {
       "start_time": "08:00",
-      "end_time": "09:10",
+      "end_time": "09:00",
       "title": "Registration",
       "speaker": "",
       "track": "",
       "tags": []
     },
     {
-      "start_time": "09:10",
+      "start_time": "09:00",
       "end_time": "10:00",
       "title": "Keynote - AI is the new UI - how we are building AI into Drupal CMS",
       "speaker": "James Abrahams",
@@ -112,15 +112,31 @@
       "tags": [
         "Drupal CMS"
       ]
+    },
+    {
+      "start_time": "17:30",
+      "end_time": "18:00",
+      "title": "Networking",
+      "speaker": null,
+      "track": null,
+      "tags": []
     }
   ],
   "Dropsolid Room": [
     {
       "start_time": "08:00",
-      "end_time": "09:10",
+      "end_time": "09:00",
       "title": "Registration",
       "speaker": "",
       "track": "",
+      "tags": []
+    },
+    {
+      "start_time": "09:00",
+      "end_time": "10:00",
+      "title": null,
+      "speaker": null,
+      "track": null,
       "tags": []
     },
     {
@@ -200,26 +216,48 @@
         "Accessibility, Frontend & UX Design",
         "Code & Development"
       ]
+    },
+    {
+      "start_time": "16:35",
+      "end_time": "17:25",
+      "title": null,
+      "speaker": null,
+      "track": null,
+      "tags": []
+    },
+    {
+      "start_time": "17:25",
+      "end_time": "18:00",
+      "title": "Networking",
+      "speaker": null,
+      "track": null,
+      "tags": []
     }
   ],
   "Intro track": [
     {
       "start_time": "08:00",
-      "end_time": "09:10",
+      "end_time": "09:00",
       "title": "Registration",
       "speaker": "",
       "track": "",
       "tags": []
     },
     {
+      "start_time": "09:00",
+      "end_time": "10:00",
+      "title": null,
+      "speaker": null,
+      "track": null,
+      "tags": []
+    },
+    {
       "start_time": "10:10",
       "end_time": "11:00",
-      "title": "First-time contributor workshop",
-      "speaker": "rodrigoaguilera",
-      "track": "Student track",
-      "tags": [
-        "Drupal Community + Being Human"
-      ]
+      "title": "Your first Drupal AI session (AI for editors, MyOwnGPT)",
+      "speaker": "wouters_f",
+      "track": "Sitebuilding",
+      "tags": []
     },
     {
       "start_time": "11:10",
@@ -243,10 +281,12 @@
     {
       "start_time": "13:00",
       "end_time": "13:50",
-      "title": "Your first Drupal AI session (AI for editors, MyOwnGPT)",
-      "speaker": "wouters_f",
-      "track": "Sitebuilding",
-      "tags": []
+      "title": "First-time contributor workshop",
+      "speaker": "rodrigoaguilera",
+      "track": "Student track",
+      "tags": [
+        "Drupal Community + Being Human"
+      ]
     },
     {
       "start_time": "14:00",
@@ -257,6 +297,14 @@
       "tags": [
         "Code & Development"
       ]
+    },
+    {
+      "start_time": "15:00",
+      "end_time": "18:00",
+      "title": null,
+      "speaker": null,
+      "track": null,
+      "tags": []
     }
   ]
 }
