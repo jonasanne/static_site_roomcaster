@@ -112,14 +112,6 @@
   ],
   "Dropsolid Room": [
     {
-      "start_time": "08:00",
-      "end_time": "13:00",
-      "title": null,
-      "speaker": null,
-      "track": null,
-      "tags": []
-    },
-    {
       "start_time": "13:00",
       "end_time": "13:50",
       "title": "Help! My search page is getting hammered by a bot!",
@@ -158,25 +150,10 @@
         "Code & Development",
         "PHP"
       ]
-    },
-    {
-      "start_time": "16:30",
-      "end_time": "18:00",
-      "title": null,
-      "speaker": null,
-      "track": null,
-      "tags": []
     }
   ],
   "Student Track": [
-    {
-      "start_time": "08:00",
-      "end_time": "12:45",
-      "title": null,
-      "speaker": null,
-      "track": null,
-      "tags": []
-    },
+    
     {
       "start_time": "12:45",
       "end_time": "13:00",

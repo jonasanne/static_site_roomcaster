@@ -132,14 +132,6 @@
       "tags": []
     },
     {
-      "start_time": "09:00",
-      "end_time": "10:00",
-      "title": null,
-      "speaker": null,
-      "track": null,
-      "tags": []
-    },
-    {
       "start_time": "10:10",
       "end_time": "11:00",
       "title": "The Developer's Guide to UX",
@@ -218,14 +210,6 @@
       ]
     },
     {
-      "start_time": "16:35",
-      "end_time": "17:25",
-      "title": null,
-      "speaker": null,
-      "track": null,
-      "tags": []
-    },
-    {
       "start_time": "17:25",
       "end_time": "18:00",
       "title": "Networking",
@@ -241,14 +225,6 @@
       "title": "Registration",
       "speaker": "",
       "track": "",
-      "tags": []
-    },
-    {
-      "start_time": "09:00",
-      "end_time": "10:00",
-      "title": null,
-      "speaker": null,
-      "track": null,
       "tags": []
     },
     {
@@ -297,14 +273,6 @@
       "tags": [
         "Code & Development"
       ]
-    },
-    {
-      "start_time": "15:00",
-      "end_time": "18:00",
-      "title": null,
-      "speaker": null,
-      "track": null,
-      "tags": []
     }
   ]
 }
