@@ -14,7 +14,6 @@ export const buildStyles = () => (
 
 export const minifyJs = () => (
   gulp.src('./js/**/*.js')
-    .pipe(concat('main.min.js'))
     .pipe(uglify())
     .pipe(gulp.dest('../build/js'))
 );

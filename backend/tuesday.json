@@ -121,7 +121,7 @@
     },
     {
       "start_time": "13:00",
-      "end_time": "’13:50",
+      "end_time": "13:50",
       "title": "Help! My search page is getting hammered by a bot!",
       "speaker": "ifrik",
       "track": "Sitebuilding",
