@@ -156,16 +156,20 @@ function loadSessions() {
     .catch((err) => {
       elements.error.classList.remove("hidden");
       console.error("Error loading sessions:", err);
-      setTimeout(() => location.reload(), 1000);
+      setTimeout(() => location.reload(), 30000); // Retry after 30 seconds
     });
 }
 
 // Initialize the application
 function init() {
   updateTime();
-  loadSessions();
-  setInterval(loadSessions, 60000); // Update sessions every 60 seconds
-  setInterval(updateTime, 1000); // Update time every second
+  loadSessions(); // Initial call to load sessions
+  setInterval(() => {
+    loadSessions();
+  }, 60000); // Update sessions every 60 seconds
+  setInterval(() => {
+    updateTime();
+  }, 1000); // Update time every second
 }
 
 init();
