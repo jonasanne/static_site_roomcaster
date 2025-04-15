@@ -66,13 +66,15 @@ function loadSessions() {
 }
 // Function to populate sessions
 function populateSessions(roomName, roomData) {
+    
     const roomElement = document.querySelector(`.js-${roomName.toLowerCase().replace(/\s+/g, '')}`);
 
     if (!roomElement) return;
 
     const contentBlock = roomElement.querySelector('.js-content-block');
     const template = document.querySelector('.js-content-block-item-template');
-
+    // Clear previous sessions
+    contentBlock.innerHTML = ''; // Clear existing sessions
     roomData.forEach(session => {
         if (!session.title) return; // Skip if session title is empty
         const sessionElement = template.cloneNode(true);
@@ -94,7 +96,7 @@ function init() {
     loadSessions(); // Initial call to load sessions
     setInterval(() => {
         loadSessions();
-    }, 60000); // Update sessions every 60 seconds
+    }, 10000); // Update sessions every 60 seconds
 }
 
 init();
