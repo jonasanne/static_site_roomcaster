@@ -34,12 +34,16 @@ function updateTime() {
     elements.time.innerText = now;
 }
 // Check if a session is upcoming
-function isUpcomingSession(startTime) {
+function isUpcomingAndCurrentSession(startTime, endTime) {
     const now = DEBUG ? debugTime : new Date();
     const [startHours, startMinutes] = startTime.split(":").map(Number);
+    const [endHours, endMinutes] = endTime.split(":").map(Number);
 
     const startDate = new Date(now.getFullYear(), now.getMonth(), now.getDate(), startHours, startMinutes);
-    return now < startDate;
+    const endDate = new Date(now.getFullYear(), now.getMonth(), now.getDate(), endHours, endMinutes);
+
+    // Check if the session is current or upcoming
+    return now >= startDate && now <= endDate || now <= startDate;
 }
 // Load sessions from the backend
 function loadSessions() {
@@ -47,15 +51,15 @@ function loadSessions() {
         .then((response) => response.json())
         .then((data) => {
             if (data["Calibrate Room"].length > 0) {
-                remainingSessionsCali = data['Calibrate Room'].filter((session) => isUpcomingSession(session.start_time));
+                remainingSessionsCali = data['Calibrate Room'].filter((session) => isUpcomingAndCurrentSession(session.start_time, session.end_time));
                 populateSessions("calibrate", remainingSessionsCali);
             }
             if (data["Dropsolid Room"].length > 0) {
-                remainingSessionsDS = data['Dropsolid Room'].filter((session) => isUpcomingSession(session.start_time));
+                remainingSessionsDS = data['Dropsolid Room'].filter((session) => isUpcomingAndCurrentSession(session.start_time, session.end_time));
                 populateSessions("dropsolid", remainingSessionsDS);
             }
             if (data["Student Track"].length > 0) {
-                remainingSessionsST = data['Student Track'].filter((session) => isUpcomingSession(session.start_time));
+                remainingSessionsST = data['Student Track'].filter((session) => isUpcomingAndCurrentSession(session.start_time, session.end_time));
                 populateSessions("student", remainingSessionsST);
             }
         })
@@ -66,7 +70,7 @@ function loadSessions() {
 }
 // Function to populate sessions
 function populateSessions(roomName, roomData) {
-    
+
     const roomElement = document.querySelector(`.js-${roomName.toLowerCase().replace(/\s+/g, '')}`);
 
     if (!roomElement) return;
