@@ -58,7 +58,7 @@ function loadSessions() {
                 remainingSessionsDS = data['Dropsolid Room'].filter((session) => isUpcomingAndCurrentSession(session.start_time, session.end_time));
                 populateSessions("dropsolid", remainingSessionsDS);
             }
-            if (data["Intro track"].length > 0) {
+            if (data["Intro track"] && data["Intro track"].length > 0) {
                 remainingSessionsST = data['Intro track'].filter((session) => isUpcomingAndCurrentSession(session.start_time, session.end_time));
                 populateSessions("student", remainingSessionsST);
             }
